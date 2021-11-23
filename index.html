@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <title>Momentum</title>
+    </head>
+    <body>
+        <div class="header">
+            <form id="Link">
+                <a href="Http://www.Google.com">Link</a>
+                <i class="fas fa-search"></i>
+                <input class="ViewInput " type="text" required="required">
+            </form>
+            <div class="navi">
+                <div id="calcul">계산기</div>
+                <div id="loto">로또번호 추천</div>
+                <div id="upAndDown">Up&Down Game</div>
+            </div>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="option-box">
+            <form class="hidden" id="calcul-form">
+                <input type="text">
+                <table border="1px black solid" width="425px" height="120">
+                    <td class="num7">7</td>
+                    <td class="num8">8</td>
+                    <td class="num9">9</td>
+                    <td class="getmul">*</td>
+                    <tr>
+                        <td class="num4">4</td>
+                        <td class="num5">5</td>
+                        <td class="num6">6</td>
+                        <td class="getdiv">/</td>
+                    </tr>
+                    <tr>
+                        <td class="num1">1</td>
+                        <td class="num2">2</td>
+                        <td class="num3">3</td>
+                        <td class="getplu">+</td>
+                    </tr>
+                    <tr>
+                        <td class="num0" colspan="2">0</td>
+                        <td class="getdone">=</td>
+                        <td class="getmiu">-</td>
+                    </tr>
+                </table>
+            </form>
+            <h1></h1>
+            <form class="hidden" id="upanddown-form">
+                <h1></h1>
+                <input type="number">
+                <h2></h2>
+            </form>
+        </div>
+        <div class="main">
+            <form id="login-form" class="hidden">
+                <input
+                    required="required"
+                    maxlength="15"
+                    type="text"
+                    placeholder="What is your name?"
+                    color="white"/>
+            </form>
+            <h2 id="clock">00:00</h2>
+            <h1 id="greeting" class="hidden"></h1>
+            <form id="todo-form">
+                <input
+                    class="Write"
+                    type="text"
+                    placeholder="Write a To Do and Press Enter"
+                    required="required"/>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <div class="footer">
+            <div id="quotes">
+                <h3></h3>
+                <h5></h5>
+            </div>
+        </div>
+
+        <script src="js/greeting.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/Link.js"></script>
+        <script src="js/LotoNumber.js"></script>
+        <script src="js/calculer.js"></script>
+        <script src="js/upanddown.js"></script>
+    </body>
+</html>
